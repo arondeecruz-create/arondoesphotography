@@ -1,0 +1,144 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+.menu-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  z-index: 100;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 3px;
+  padding: 10px 0;
+  transition: opacity 0.3s;
+}
+.menu-btn.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+}
+.nav.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav-back {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+
+.nav-links {
+  list-style: none;
+  text-align: center;
+}
+.nav-links li {
+  margin: 24px 0;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 200;
+  letter-spacing: 8px;
+  transition: opacity 0.3s;
+}
+.nav-links a:hover {
+  opacity: 0.5;
+}
+
+.hero {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  background: url('assets/hero.jpg') center/cover no-repeat;
+  transition: filter 0.5s ease;
+}
+.hero.blurred {
+  filter: blur(4px);
+}
+
+.title {
+  font-size: clamp(32px, 6vw, 72px);
+  font-weight: 200;
+  letter-spacing: 12px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: clamp(12px, 1.5vw, 18px);
+  letter-spacing: 5px;
+  font-weight: 300;
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+
+.enter-btn {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 4px;
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 14px 40px;
+  transition: all 0.3s;
+}
+.enter-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .menu-btn { top: 20px; left: 20px; }
+  .nav-back { top: 20px; left: 20px; }
+  .nav-links a { font-size: 28px; letter-spacing: 5px; }
+  .nav-links li { margin: 18px 0; }
+  .title { letter-spacing: 6px; }
+}
