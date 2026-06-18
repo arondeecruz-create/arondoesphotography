@@ -259,6 +259,47 @@ html, body {
   margin-bottom: 16px;
 }
 
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#contactForm input,
+#contactForm textarea {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 14px;
+  color: #fff;
+  font-size: 13px;
+  font-family: inherit;
+  letter-spacing: 1px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+#contactForm input:focus,
+#contactForm textarea:focus {
+  border-color: rgba(255,255,255,0.6);
+}
+#contactForm textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+#contactForm button {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 14px 40px;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  align-self: flex-start;
+}
+#contactForm button:hover {
+  background: #fff;
+  color: #000;
+}
+
 @media (max-width: 768px) {
   .menu-btn { top: 20px; left: 20px; }
   .nav-back { top: 20px; left: 20px; }
