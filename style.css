@@ -337,7 +337,17 @@ html, body {
   .nav-logo { font-size: 11px; letter-spacing: 2px; top: 20px; }
   .page-header { padding: 20px; }
   .project-section { padding: 0 20px 40px; }
-  .project-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+  }
+  .project-grid img:nth-child(3n) {
+    grid-column: 1 / -1;
+    aspect-ratio: 3 / 2;
+  }
+  .project-grid img {
+    aspect-ratio: 3 / 4;
+  }
   .about-content, .contact-content { padding: 0 20px 20px; }
   #contactForm input, #contactForm textarea { min-width: unset; }
 }
