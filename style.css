@@ -191,14 +191,17 @@ html, body {
   background: #000;
 }
 .page-title {
-  font-size: 13px;
-  letter-spacing: 3px;
+  font-size: 40px;
+  font-weight: 200;
+  letter-spacing: 8px;
 }
 .back-btn {
   font-size: 13px;
   letter-spacing: 3px;
   cursor: pointer;
   transition: opacity 0.3s;
+  font-weight: 200;
+  text-transform: uppercase;
 }
 .back-btn:hover {
   opacity: 0.5;
@@ -336,7 +339,7 @@ html, body {
   .enter-btn { padding: 12px 32px; }
   .nav-logo { font-size: 11px; letter-spacing: 2px; top: 20px; }
   .page-header { padding: 60px 20px 20px; }
-  .page-title { font-size: 11px; letter-spacing: 2px; }
+  .page-title { font-size: 28px; letter-spacing: 7px; }
   .project-section { padding: 0 20px 40px; }
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
