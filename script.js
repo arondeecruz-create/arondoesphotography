@@ -79,8 +79,8 @@ const projects = [
     ]
   },
   {
-    title: 'Sacred Damce',
-    folder: 'Sacred_Damce',
+    title: 'Sacred Dance',
+    folder: 'Sacred_Dance',
     images: [
       'DSC08284.jpg',
       'DSC08297.jpg',
