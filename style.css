@@ -276,18 +276,22 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  width: 100%;
+  max-width: 480px;
 }
 #contactForm input,
 #contactForm textarea {
   background: none;
   border: 1px solid rgba(255,255,255,0.2);
-  padding: 14px;
+  padding: 18px;
   color: #fff;
-  font-size: 13px;
+  font-size: 15px;
   font-family: inherit;
   letter-spacing: 1px;
   outline: none;
   transition: border-color 0.3s;
+  width: 100%;
+  min-width: 400px;
 }
 #contactForm input:focus,
 #contactForm textarea:focus {
@@ -295,7 +299,7 @@ html, body {
 }
 #contactForm textarea {
   resize: vertical;
-  min-height: 120px;
+  min-height: 150px;
 }
 #contactForm button {
   background: none;
