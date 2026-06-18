@@ -245,8 +245,7 @@ html, body {
   object-fit: contain;
 }
 
-.about-content,
-.contact-content {
+.about-content {
   padding: 0 30px 30px;
   max-width: 600px;
   font-size: 16px;
@@ -254,9 +253,23 @@ html, body {
   line-height: 1.8;
   letter-spacing: 1px;
 }
-.about-content p,
-.contact-content p {
+.about-content p {
   margin-bottom: 16px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 73px);
+  padding: 0 30px;
+}
+.contact-email {
+  margin-top: 24px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  opacity: 0.5;
 }
 
 #contactForm {
