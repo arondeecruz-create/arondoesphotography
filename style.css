@@ -339,11 +339,11 @@ html, body {
   .project-section { padding: 0 20px 40px; }
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2px;
+    gap: 12px;
   }
   .project-grid img:nth-child(3n) {
     grid-column: 1 / -1;
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 4 / 5;
   }
   .project-grid img {
     aspect-ratio: 3 / 4;
