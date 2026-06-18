@@ -3,30 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Photographer</title>
+  <title>Aron DeCruz - Photography</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="menu-overlay"></div>
 
-  <div class="menu-btn" id="menuBtn">
-    <span>MENU</span>
-  </div>
+  <div class="menu-btn" id="menuBtn">MENU</div>
+
+  <div class="nav-logo" id="navLogo">ARONDOESPHOTOGRAPHY</div>
 
   <nav class="nav" id="nav">
     <div class="nav-back" id="navBack">BACK</div>
     <ul class="nav-links">
-      <li><a href="#">PORTFOLIO</a></li>
-      <li><a href="#">ABOUT</a></li>
-      <li><a href="#">CONTACT</a></li>
+      <li><a href="#" data-view="portfolio">PORTFOLIO</a></li>
+      <li><a href="#" data-view="about">ABOUT</a></li>
+      <li><a href="#" data-view="contact">CONTACT</a></li>
     </ul>
   </nav>
 
-  <main class="hero" id="hero">
-    <h1 class="title">YOUR NAME</h1>
-    <p class="subtitle">PHOTOGRAPHER - DIRECTOR</p>
-    <a href="#" class="enter-btn">ENTER</a>
-  </main>
+  <div class="view active" id="view-hero">
+    <div class="hero">
+      <video class="hero-video" autoplay muted playsinline preload="auto">
+        <source src="assets/147996-793140610_medium.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="title">ARONDOESPHOTOGRAPHY</h1>
+        <a href="#" class="enter-btn" data-view="menu">ENTER</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="view" id="view-portfolio">
+    <div class="page-header">
+      <span class="back-btn" data-view="hero">BACK</span>
+      <span class="page-title">PORTFOLIO</span>
+    </div>
+    <div class="portfolio-content" id="portfolioContent"></div>
+  </div>
+
+  <div class="view" id="view-about">
+    <div class="page-header">
+      <span class="back-btn" data-view="hero">BACK</span>
+      <span class="page-title">ABOUT</span>
+    </div>
+    <div class="about-content">
+      <p>Photographer based in [your location].</p>
+      <p>Specializing in [your specialties].</p>
+    </div>
+  </div>
+
+  <div class="view" id="view-contact">
+    <div class="page-header">
+      <span class="back-btn" data-view="hero">BACK</span>
+      <span class="page-title">CONTACT</span>
+    </div>
+    <div class="contact-content">
+      <p>Email: your@email.com</p>
+      <p>Instagram: @yourhandle</p>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <img id="lightboxImg" src="" alt="">
+  </div>
 
   <script src="script.js"></script>
 </body>

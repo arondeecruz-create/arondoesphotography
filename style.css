@@ -72,6 +72,17 @@ html, body {
   letter-spacing: 3px;
 }
 
+.nav-logo {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  z-index: 60;
+}
+
 .nav-links {
   list-style: none;
   text-align: center;
@@ -86,6 +97,7 @@ html, body {
   font-weight: 200;
   letter-spacing: 8px;
   transition: opacity 0.3s;
+  cursor: pointer;
 }
 .nav-links a:hover {
   opacity: 0.5;
@@ -94,33 +106,39 @@ html, body {
 .hero {
   position: fixed;
   inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.15);
+  z-index: 1;
+}
+.hero-content {
+  position: absolute;
+  inset: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 0;
-  background: url('assets/hero.jpg') center/cover no-repeat;
-  transition: filter 0.5s ease;
+  z-index: 2;
+  transition: opacity 0.8s ease;
 }
-.hero.blurred {
-  filter: blur(4px);
-}
-
 .title {
   font-size: clamp(32px, 6vw, 72px);
   font-weight: 200;
   letter-spacing: 12px;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  font-size: clamp(12px, 1.5vw, 18px);
-  letter-spacing: 5px;
-  font-weight: 300;
-  opacity: 0.7;
   margin-bottom: 40px;
 }
-
 .enter-btn {
   color: #fff;
   text-decoration: none;
@@ -129,10 +147,116 @@ html, body {
   border: 1px solid rgba(255,255,255,0.4);
   padding: 14px 40px;
   transition: all 0.3s;
+  cursor: pointer;
+  background: none;
 }
 .enter-btn:hover {
   background: #fff;
   color: #000;
+}
+
+.view {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 5;
+  background: #000;
+}
+.view.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.page-header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  z-index: 10;
+  background: #000;
+}
+.page-title {
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+.back-btn {
+  font-size: 13px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.back-btn:hover {
+  opacity: 0.5;
+}
+
+#view-portfolio {
+  overflow-y: auto;
+}
+
+.portfolio-content {
+  min-height: 100px;
+}
+
+.project-section {
+  padding: 0 30px 50px;
+}
+.project-section-title {
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+  opacity: 0.6;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 4px;
+}
+.project-grid img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  background: #1a1a1a;
+}
+.project-grid img:hover {
+  transform: scale(1.05);
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0,0,0,0.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.about-content,
+.contact-content {
+  padding: 0 30px 30px;
+  max-width: 600px;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+.about-content p,
+.contact-content p {
+  margin-bottom: 16px;
 }
 
 @media (max-width: 768px) {
@@ -141,4 +265,8 @@ html, body {
   .nav-links a { font-size: 28px; letter-spacing: 5px; }
   .nav-links li { margin: 18px 0; }
   .title { letter-spacing: 6px; }
+  .page-header { padding: 20px; }
+  .project-section { padding: 0 20px 40px; }
+  .project-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+  .about-content, .contact-content { padding: 0 20px 20px; }
 }
