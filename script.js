@@ -26,16 +26,6 @@ const projects = [
     ]
   },
   {
-    title: 'Crimson Desire',
-    folder: 'Crimson_Desire',
-    images: [
-      'DSC09257.jpg',
-      'DSC09334.jpg',
-      'DSC09334-2.jpg',
-      'DSC09335-2.jpg'
-    ]
-  },
-  {
     title: 'Crimson Nocturne',
     folder: 'Crimson_Nocturne',
     images: [
