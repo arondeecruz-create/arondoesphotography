@@ -336,6 +336,7 @@ html, body {
   .enter-btn { padding: 12px 32px; }
   .nav-logo { font-size: 11px; letter-spacing: 2px; top: 20px; }
   .page-header { padding: 20px; }
+  .page-title { font-size: 11px; letter-spacing: 2px; }
   .project-section { padding: 0 20px 40px; }
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
