@@ -1,7 +1,7 @@
 const projects = [
   {
     title: 'Dee Veil Shoot',
-    folder: 'Dee Veil Shoot',
+    folder: 'Dee_Veil_Shoot',
     images: [
       'DSC00056.jpg','DSC00072.jpg','DSC00072-Edit.jpg','DSC00158.jpg','DSC00158-2.jpg',
       'DSC00177.jpg','DSC00386.jpg','DSC00386-Edit-2-Edit.jpg','DSC00386-Edit-3.jpg',
@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: 'Kolzi Black Hat',
-    folder: 'Kolzi Black Hat',
+    folder: 'Kolzi_Black_Hat',
     images: [
       'DSC00589.jpg','DSC00590.jpg','DSC00592.jpg','DSC00598.jpg','DSC00602.jpg',
       'DSC00605.jpg','DSC00608.jpg','DSC00640.jpg','DSC00646.jpg','DSC00647.jpg',
@@ -29,7 +29,7 @@ const projects = [
   },
   {
     title: 'Kathryn Dance 1',
-    folder: 'Kathryn Dance 1',
+    folder: 'Kathryn_Dance_1',
     images: [
       'DSC08284.jpg','DSC08297.jpg','DSC08298.jpg','DSC08311.jpg','DSC08312-Edit.jpg',
       'DSC08324.jpg','DSC08326.jpg','DSC08348.jpg','DSC08349.jpg','DSC08354.jpg',
@@ -38,7 +38,7 @@ const projects = [
   },
   {
     title: 'Samurai Shoot June 2026',
-    folder: 'Samurai Shoot June 2026',
+    folder: 'Samurai_Shoot_June_2026',
     images: [
       'DSC07748.jpg','DSC07753.jpg','DSC07755.jpg','DSC07758.jpg','DSC07761.jpg',
       'DSC07761-2.jpg','DSC07774.jpg','DSC07776.jpg','DSC07783.jpg','DSC07791.jpg',
