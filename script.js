@@ -144,47 +144,6 @@ const projects = [
       'DSC08986.jpg',
       'DSC08990.jpg'
     ]
-  },
-  {
-    title: 'Royal Guard',
-    folder: 'Royal_Guard',
-    images: [
-      'DSC07817.jpg',
-      'DSC07820.jpg',
-      'DSC07831.jpg',
-      'DSC07835.jpg',
-      'DSC07841.jpg',
-      'DSC07847.jpg',
-      'DSC07858.jpg',
-      'DSC07864.jpg',
-      'DSC07865.jpg',
-      'DSC07883.jpg',
-      'DSC07895.jpg',
-      'DSC07900.jpg',
-      'DSC07904.jpg',
-      'DSC07953.jpg',
-      'DSC08039.jpg',
-      'DSC08439.jpg',
-      'DSC08449.jpg',
-      'DSC08456.jpg',
-      'DSC08477.jpg',
-      'DSC08479.jpg',
-      'DSC08524.jpg',
-      'DSC08528.jpg',
-      'DSC08530.jpg',
-      'DSC08532.jpg',
-      'DSC08539.jpg',
-      'DSC08542.jpg',
-      'DSC08553.jpg',
-      'DSC08554.jpg',
-      'DSC08555.jpg',
-      'DSC08557.jpg',
-      'DSC08558.jpg',
-      'DSC08560.jpg',
-      'DSC08569.jpg',
-      'DSC08572.jpg',
-      'DSC08578.jpg'
-    ]
   }
 ];
 
