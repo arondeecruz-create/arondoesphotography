@@ -44,7 +44,6 @@ const projects = [
     title: 'Midnight Reverie',
     folder: 'Midnight_Reverie',
     images: [
-      'DSC00056.jpg',
       'DSC09617-2.jpg',
       'DSC09652.jpg',
       'DSC09663.jpg',
@@ -56,6 +55,7 @@ const projects = [
       'DSC09712-3.jpg',
       'DSC09715.jpg',
       'DSC09757.jpg',
+      'DSC00056.jpg',
       'DSC09879.jpg',
       'DSC09897.jpg',
       'DSC09976.jpg'
