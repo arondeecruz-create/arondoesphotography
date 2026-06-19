@@ -217,17 +217,24 @@ html, body {
 
 .project-section {
   padding: 0 30px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .project-section-title {
   font-size: 13px;
   letter-spacing: 3px;
   margin-bottom: 16px;
   opacity: 0.6;
+  width: 100%;
+  max-width: 1200px;
 }
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 4px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  max-width: 1200px;
+  width: 100%;
 }
 .project-grid img {
   width: 100%;
